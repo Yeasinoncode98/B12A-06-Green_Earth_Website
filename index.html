@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Daisy and Tailwind Link added -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- vanila css link -->
     <link rel="stylesheet" href="./styles.css">
     <title>Green Earth</title>
 </head>
@@ -55,7 +53,13 @@
 
     <!-- Trees Section -->
     <section class="bg-green-50 py-20">
-        <h1 class="text-3xl font-bold text-center mb-10">Choose Your Trees</h1>
+        <h1 class="text-3xl font-bold text-center mb-6">Choose Your Trees</h1>
+
+        <!-- Loader under heading -->
+        <div class="flex justify-center mb-8" id="loader">
+            <span class="loading loading-bars loading-xl"></span>
+        </div>
+
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-4">
 
             <!-- Categories -->
@@ -69,9 +73,7 @@
             <!-- Posts Div -->
             <div class="md:col-span-8">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-2 gap-4" id="post-container">
-                    <div class="col-span-1 justify-center hidden" id="loader">
-                        <span class="loading loading-bars loading-xl"></span>
-                    </div>
+                    <!-- Posts will appear here -->
                 </div>
             </div>
 
