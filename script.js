@@ -139,7 +139,7 @@ function displayCart() {
 
     const div = document.createElement("div");
     div.className =
-      "flex justify-between items-center bg-green-50 px-4 py-2 rounded-lg mb-2";
+      "flex justify-between items-center bg-green-50 px-4 py-2 rounded-lg mb-2 mt-5";
     div.innerHTML = `
       <div>
         <p class="font-semibold text-gray-800">${plant.name}</p>
