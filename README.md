@@ -3,11 +3,11 @@
 1) What is the difference between var, let, and const?
 ==>
 
-1.var is the old way and works within functions,
+i.var is the old way and works within functions,
 
-2.let is for variables that can change inside a block.
+ii.let is for variables that can change inside a block.
  
-3.const is for values you don’t want to change.
+iii.const is for values you don’t want to change.
 
 2) What is the difference between map(), forEach(), and filter()?
 
