@@ -174,28 +174,6 @@ function removeFromCart(id) {
 }
 
 // Tree name click -> show modal
-// postContainer.addEventListener("click", (e) => {
-//   if (e.target.tagName === "H2") {
-//     const card = e.target.closest(".card");
-//     const img = card.querySelector("img").src;
-//     const name = e.target.textContent;
-//     const category = card.querySelector("span").textContent;
-//     const price = card
-//       .querySelector(".text-gray-900")
-//       .textContent.replace("৳", "");
-//     const desc = card.querySelector("p").textContent;
-
-//     // Fill modal
-//     document.getElementById("modal-title").textContent = name;
-//     document.getElementById("modal-image").src = img;
-//     document.getElementById("modal-category").textContent = category;
-//     document.getElementById("modal-price").textContent = price;
-//     document.getElementById("modal-description").textContent = desc;
-
-//     // Show modal
-//     document.getElementById("treeModal").showModal();
-//   }
-// });
 
 // Tree name click -> show modal
 postContainer.addEventListener("click", (e) => {
@@ -209,7 +187,7 @@ postContainer.addEventListener("click", (e) => {
       .textContent.replace("৳", "");
     const desc = card.querySelector("p").textContent;
 
-    // working zone
+    // working from here properly (calling through id )
     document.getElementById("modal-title").textContent = name;
     document.getElementById("modal-image").src = img;
     document.getElementById("modal-category").textContent = category;

@@ -20,9 +20,12 @@
     <!-- Header Starts from here -->
     <header class="shadow-sm bg-green-700">
         <div class="navbar container mx-auto">
+            <!-- Left Side -->
             <div class="navbar-start">
-                <a href="#" class="text-xl text-white font-bold">Green Earth</a>
+                <a href="#" class="text-xl text-white font-bold">🌴Green Earth</a>
             </div>
+
+            <!-- Center (Desktop Menu) -->
             <div class="navbar-center hidden lg:flex">
                 <ul class="flex gap-4 menu-horizontal px-1 text-white">
                     <li><a class="cursor-pointer font-semibold">About</a></li>
@@ -30,8 +33,22 @@
                     <li><a class="cursor-pointer font-semibold">Plant a Tree</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
+
+            <!-- Right Side -->
+            <div class="navbar-end flex items-center gap-2">
+                <!-- Plant a Tree Button (Always Visible) -->
                 <a class="btn btn-warning text-white rounded-full">Plant a Tree</a>
+
+                <!-- Mobile Dropdown ( visible on mobile) -->
+                <div class="dropdown dropdown-end lg:hidden">
+                    <label tabindex="0" class="btn btn-warning text-white rounded-full">☰</label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-600 rounded-box w-40 text-white">
+                        <li><a>About</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Plant a Tree</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -58,7 +75,7 @@
 
     <!-- Trees Section -->
     <section class="bg-green-50 py-20">
-        <h1 class="text-3xl font-bold text-center mb-6">Choose Your Trees</h1>
+        <h1 class="text-3xl font-bold text-left mb-6 md:text-center">Choose Your Trees</h1>
 
         <!-- Loader under heading -->
         <div class="flex justify-center mb-8" id="loader">
@@ -118,11 +135,11 @@
         <div class="modal-box w-[95%] max-w-md">
             <h3 id="modal-title" class="font-bold text-xl mb-3"></h3>
             <img id="modal-image" class="rounded-lg w-full h-48 object-cover mb-3" />
-            <p><strong>Category:</strong> <span id="modal-category"></span></p>
-            <p><strong>Price:</strong> ৳<span id="modal-price"></span></p>
-            <p><strong>Description:</strong> <span id="modal-description"></span></p>
+            <p class="mt-2"><strong>Category:</strong> <span id="modal-category"></span></p>
+            <p class="mt-2"><strong>Price:</strong> ৳<span id="modal-price"></span></p>
+            <p class="mt-2"><strong>Description:</strong> <span id="modal-description"></span></p>
             <div class="modal-action">
-                <label for="treeModal" class="btn">Close</label>
+                <label for="treeModal" class="btn hover:bg-red-400">Close</label>
             </div>
         </div>
     </div>
